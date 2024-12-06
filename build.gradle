@@ -3,7 +3,7 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.165'
+    id 'net.neoforged.gradle.userdev' version '7.0.171'
 }
 
 version = "${mcversion}-${version_major}.${version_minor}"
@@ -26,6 +26,9 @@ runs {
 
         // Recommended logging level for the console
         systemProperty 'forge.logging.console.level', 'debug'
+
+        //Limit ram usage for the dev environment to 4GB
+        jvmArgument '-Xmx4G'
 
         modSource project.sourceSets.main
     }
