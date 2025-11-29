@@ -5,9 +5,9 @@ license = "MIT License"
 modId="constructionwand"
 version="${file.jarVersion}"
 displayName="Construction Wand"
-displayURL="https://github.com/Theta-Dev/ConstructionWand"
+displayURL=""
 logoFile="logo.png"
-authors="ThetaDev"
+authors="ThetaDev, SrNadien"
 description='''
 Construction Wands make building easier!
 
